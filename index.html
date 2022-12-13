@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <div class="container">
+        <div class="headers">
 
-<h1 id="title">Survey Form</h1>
-<p id="description">This is a survey form.</p>
-<form id="survey-form">
-    
-    <label for="name" id="name-label">Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="Your Name"><br>
-    <label for="email" id="email-label">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
-    <label for="number" id="number-label" >Number:</label><br>
-    <input type="number" id="number" name="number" min="1000000000" max="9999999999" placeholder="1234546789"
-    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a survey form.</p>
+        </div>
+        <form id="survey-form">
 
-    <label for="gender">Gender:</label><br>
 
-    <select name="gender" id="dropdown">
-  <option value="male">Male</option>
-  <option value="female">Female</option>
-  <option value="others">Others</option>
-  
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name"><br>
+            <label for="email" id="email-label">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+            <label for="number" id="number-label">Number:</label><br>
+            <input type="number" id="name" name="name" min="1000000000" max="9999999999" placeholder="123-454-6789"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
 
-</select>
-<br>
-<fieldset>
-<legend for="cars">Choose a car:</legend>
-<input type="radio" id="benz" name="fav_car" value="benz">
+            <label for="gender">Gender:</label><br>
 
-<label for="benz">Benz</label>
-<input type="radio" id="bmw" name="fav_car" value="bmw">
-<label for="bmw">BMW</label>
-<input type="radio" id="Audi" name="fav_car" value="audi">
-<label for="audi">Audi</label>
-    </fieldset>
-    <fieldset>
-        <legend for="cars">Familiar coding languages:</legend>
-        <input type="checkbox" id="html" name="coding_lang" value="html">
-        
-        <label for="html">HTML</label>
-        <input type="checkbox" id="css" name="coding_lang" value="css">
-        <label for="css">CSS</label>
-        <input type="checkbox" id="others" name="coding_lang" value="others">
-        <label for="others">Others</label>
+            <select name="gender" id="dropdown">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+
+
+            </select>
+            <br>
+            <fieldset>
+                <legend for="cars">Choose a car:</legend><br>
+                <input type="radio" id="benz" name="fav_car" value="benz">
+
+                <label for="benz">Benz</label>
+                <input type="radio" id="bmw" name="fav_car" value="bmw">
+                <label for="bmw">BMW</label>
+                <input type="radio" id="Audi" name="fav_car" value="audi">
+                <label for="audi">Audi</label>
             </fieldset>
-    <label for="w3review">Additional Comments:</label><br>
+            <fieldset>
+                <legend for="cars">Familiar coding languages:</legend><br>
+                <input type="checkbox" id="html" name="coding_lang" value="html">
 
-<textarea id="w3review" name="w3review" rows="4" cols="50">Enter your additional comments here.
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="coding_lang" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="others" name="coding_lang" value="others">
+                <label for="others">Others</label>
+            </fieldset>
+            <label for="w3review">Additional Comments:</label><br>
+
+            <textarea id="w3review" name="w3review" rows="4" cols="50">Enter your additional comments here.
 </textarea><br>
-<button id=”submit” type="submit">Submit</button>
-</form>
+            <button id=”submit”>Submit</button>
+        </form>
+    </div>
 </body>
+
 </html>
