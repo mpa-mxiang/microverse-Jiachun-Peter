@@ -8,6 +8,7 @@
 <h1 id="title">Survey Form</h1>
 <p id="description">This is a survey form.</p>
 <form id="survey-form">
+    
     <label for="name" id="name-label">Name:</label><br>
     <input type="text" id="name" name="name" placeholder="Your Name"><br>
     <label for="email" id="email-label">Email:</label><br>
@@ -26,14 +27,30 @@
 
 </select>
 <br>
-<label for="cars">Choose a car:</label><br>
+<fieldset>
+<legend for="cars">Choose a car:</legend><br>
 <input type="radio" id="benz" name="fav_car" value="benz">
 
-<label for="benz">Benz</label><br>
-<input type="radio" id="bmw" name="fav_bmw" value="bmw">
-<label for="bmw">BMW</label><br>
+<label for="benz">Benz</label>
+<input type="radio" id="bmw" name="fav_car" value="bmw">
+<label for="bmw">BMW</label>
 <input type="radio" id="Audi" name="fav_car" value="audi">
 <label for="audi">Audi</label>
+    </fieldset>
+    <fieldset>
+        <legend for="cars">Familiar coding languages:</legend><br>
+        <input type="checkbox" id="html" name="coding_lang" value="html">
+        
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="coding_lang" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="others" name="coding_lang" value="others">
+        <label for="others">Others</label>
+            </fieldset>
+    <label for="w3review">Additional Comments:</label><br>
+
+<textarea id="w3review" name="w3review" rows="4" cols="50">Enter your additional comments here.
+</textarea>
 </form>
 </body>
 </html>
