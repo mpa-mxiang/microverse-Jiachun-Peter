@@ -100,13 +100,20 @@ button {
 .header {
   padding: 0 0.625rem;
   margin-bottom: 1.875rem;
+  text-align: center;
 }
 
 .description {
   font-style: italic;
   font-weight: 200;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
 }
+#title{
+    text-align: center;
+
+}
+
 
 .clue {
   margin-left: 0.25rem;
