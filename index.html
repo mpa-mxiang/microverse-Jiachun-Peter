@@ -8,12 +8,32 @@
 <h1 id="title">Survey Form</h1>
 <p id="description">This is a survey form.</p>
 <form id="survey-form">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="number">Number:</label><br>
-    <input type="number" id="name" name="name"><br>
+    <label for="name" id="name-label">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your Name"><br>
+    <label for="email" id="email-label">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@gmail.com"><br>
+    <label for="number" id="number-label" >Number:</label><br>
+    <input type="number" id="name" name="name" min="1000000000" max="9999999999" placeholder="123-454-6789"
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+    <label for="gender">Gender:</label><br>
+
+    <select name="gender" id="dropdown">
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <option value="others">Others</option>
+  
+
+</select>
+<br>
+<label for="cars">Choose a car:</label><br>
+<input type="radio" id="benz" name="fav_car" value="benz">
+
+<label for="benz">Benz</label><br>
+<input type="radio" id="bmw" name="fav_bmw" value="bmw">
+<label for="bmw">BMW</label><br>
+<input type="radio" id="Audi" name="fav_car" value="audi">
+<label for="audi">Audi</label>
 </form>
 </body>
 </html>
